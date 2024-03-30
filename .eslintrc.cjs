@@ -1,3 +1,4 @@
+/** @type { import("eslint").Linter.Config } */
 module.exports = {
 	root: true,
 	extends: [
@@ -38,5 +39,14 @@ module.exports = {
 			},
 		],
 		'@typescript-eslint/no-explicit-any': ['off'],
+	},
+	globals: {
+		$state: 'readonly',
+		$derived: 'readonly',
+		$effect: 'readonly',
+		$props: 'readonly',
+		$bindable: 'readonly',
+		$inspect: 'readonly',
+		__VERSION__: 'readonly',
 	},
 }

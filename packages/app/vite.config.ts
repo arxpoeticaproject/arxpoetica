@@ -21,7 +21,7 @@ const config = {
 		}),
 	],
 	define: {
-		__ARXPOETICA_VERSION__: JSON.stringify(version),
+		__VERSION__: JSON.stringify(version),
 	},
 	test: { include: ['src/**/*.{test,spec}.{js,ts}'] },
 	server: { port: PORT || 3001, host: false, https: false },

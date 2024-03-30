@@ -2,22 +2,16 @@
 	import '../arxpoetica.css'
 	// import Header from './Header.svelte'
 
-	// // SEE: https://destroytoday.com/blog/100vw-and-the-horizontal-overflow-you-probably-didnt-know-about
-	// let innerWidth, clientWidth
+	let { children } = $props()
 </script>
 
-<!-- <svelte:window bind:innerWidth />
 <svelte:head>
-	{@html '<' +
-		'style' +
-		`>:root { --scrollbar-width: ${innerWidth - clientWidth}rem; }<` +
-		'/style' +
-		'>'}
-</svelte:head> -->
+	<meta name="version" content={__VERSION__} />
+</svelte:head>
 
 <!-- <Header /> -->
 <main>
-	<slot />
+	{@render children()}
 </main>
 
 <!-- <style lang="scss"></style> -->
