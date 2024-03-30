@@ -14,4 +14,4 @@ vite.config.ts.timestamp-*
 /src/*.map
 test-results
 .vercel
-/_*old
+/_old
