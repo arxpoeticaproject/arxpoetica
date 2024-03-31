@@ -1,7 +1,12 @@
 <script>
+	import Seo from '$lib/components/SeoMeta.svelte'
 	import Houses from '$lib/svg/svelte/houses.svelte'
 	import Button from '$lib/forms/Button.svelte'
 </script>
+
+<svelte:head>
+	<Seo title="Arx Poetica" />
+</svelte:head>
 
 <section class="section-cover">
 	<div class="svg"><Houses /></div>
