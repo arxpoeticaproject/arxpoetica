@@ -1,11 +1,11 @@
 <script>
-	import Seo from '$lib/components/SeoMeta.svelte'
+	import Seo from '$lib/components/Seo.svelte'
 	import Houses from '$lib/svg/svelte/houses.svelte'
 	import Button from '$lib/forms/Button.svelte'
 </script>
 
 <svelte:head>
-	<Seo title="Arx Poetica" />
+	<Seo title="Arx Poetica" image="/img/campaigns/og-campaign-1.jpg" />
 </svelte:head>
 
 <section class="section-cover">
